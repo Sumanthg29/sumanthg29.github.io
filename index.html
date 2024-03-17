@@ -2,19 +2,15 @@
 <html>
 <head>
     <title>My Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
         body {
-            background-image: url('background.jpg');
-            background-size: cover;
-            background-attachment: fixed;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: #333;
             color: #fff;
             text-align: center;
             padding: 10px 0;
@@ -23,6 +19,7 @@
         nav {
             text-align: center;
             padding: 10px 0;
+            background-color: #f4f4f4;
         }
 
         nav ul {
@@ -37,27 +34,42 @@
         }
 
         nav ul li a {
-            color: #fff;
+            color: #333;
             text-decoration: none;
             padding: 5px 10px;
-            border: 1px solid #fff;
+            border: 1px solid #333;
             border-radius: 5px;
         }
 
         nav ul li a:hover {
-            background-color: #fff;
-            color: #333;
+            background-color: #333;
+            color: #fff;
         }
 
         .section {
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
             margin: 20px;
+            background-color: #f4f4f4;
             border-radius: 5px;
         }
 
+        .projects {
+            columns: 2;
+            column-gap: 20px;
+        }
+
+        .projects li {
+            margin-bottom: 10px;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
         footer {
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: #333;
             color: #fff;
             text-align: center;
             padding: 10px 0;
@@ -77,15 +89,6 @@
 
         button:hover {
             background-color: #555;
-        }
-
-        .projects {
-            columns: 2;
-            column-gap: 20px;
-        }
-
-        .projects li {
-            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -114,12 +117,22 @@
     <section id="projects" class="section">
         <h2>Projects</h2>
         <ul class="projects">
-            <li>Project 1</li>
-            <li>Project 2</li>
-            <li>Project 3</li>
-            <li>Project 4</li>
-            <li>Project 5</li>
-            <li>Project 6</li>
+            <li>
+                <h3>Project 1</h3>
+                <p>Description of Project 1</p>
+                <video controls>
+                    <source src="project1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </li>
+            <li>
+                <h3>Project 2</h3>
+                <p>Description of Project 2</p>
+                <video controls>
+                    <source src="project2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </li>
         </ul>
     </section>
     <section id="contact" class="section">
