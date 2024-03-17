@@ -78,6 +78,15 @@
         button:hover {
             background-color: #555;
         }
+
+        .projects {
+            columns: 2;
+            column-gap: 20px;
+        }
+
+        .projects li {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -88,6 +97,7 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -100,6 +110,17 @@
         <h2>About Me</h2>
         <p>I am a cloud engineer with experience in AWS, Azure, and Google Cloud Platform.</p>
         <button onclick="alert('You clicked Contact Me')">Contact Me</button>
+    </section>
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <ul class="projects">
+            <li>Project 1</li>
+            <li>Project 2</li>
+            <li>Project 3</li>
+            <li>Project 4</li>
+            <li>Project 5</li>
+            <li>Project 6</li>
+        </ul>
     </section>
     <section id="contact" class="section">
         <h2>Contact Me</h2>
