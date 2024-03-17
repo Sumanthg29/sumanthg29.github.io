@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sumanth G - Portfolio</title>
     <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global styles */
         body {
             font-family: Arial, sans-serif;
             background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
         }
+
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -18,69 +25,72 @@
             background-color: #fff;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
+
         h1 {
             font-size: 2rem;
             margin-bottom: 1rem;
+            color: #333;
         }
+
         p {
             font-size: 1.1rem;
             line-height: 1.6;
+            color: #666;
         }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
         ul {
-            list-style: disc;
+            list-style: none;
             margin-left: 1.5rem;
+        }
+
+        /* Add your custom styles below */
+
+        /* Example: Add a background color to the header */
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* Example: Style the skills section */
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            color: #333;
+        }
+
+        ul.skills li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Example: Add hover effect to links */
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Sumanth G</h1>
-        <p>Email: <a href="mailto:Sumanthg8281@gmail.com">Sumanthg8281@gmail.com</a></p>
-        <p>Phone: 7892647479</p>
-        <p>Location: Bangalore, India</p>
-
-        <h2>Profile</h2>
-        <p>As a fresher, I aim to utilize my creative skills and knowledge of technologies to implement innovative ideas that benefit organizations and contribute to my professional growth.</p>
-
-        <h2>Education</h2>
-        <p>
-            <strong>MCA in Computer Science</strong><br>
-            Sambhram Academy of Management Studies, 2022 - 2023<br>
-            CGPA: 8.02
-        </p>
-        <p>
-            <strong>BCA in Computer Science</strong><br>
-            Vivekananda Institute of Management Studies, 2019 - 2021<br>
-            CGPA: 7.57
-        </p>
+    </header>
+    <div class="container">
+        <h2>About Me</h2>
+        <p>Hello! I'm Sumanth, a passionate web developer with a focus on creating clean and user-friendly websites. I love turning ideas into reality through code.</p>
 
         <h2>Skills</h2>
-        <ul>
-            <li>Linux</li>
-            <li>Amazon Web Services (AWS)</li>
-            <li>Basic Shell Scripting</li>
-            <li>HTML, CSS</li>
-            <li>Photoshop, Illustrator, Corel-Draw</li>
-            <li>MS Office</li>
-            <li>Putty, RedHat, Git-GitHub</li>
+        <ul class="skills">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
+            <!-- Add more skills as needed -->
         </ul>
-
-        <h2>Languages</h2>
-        <ul>
-            <li>English</li>
-            <li>Kannada</li>
-        </ul>
-
-        <h2>Certification</h2>
-        <p>Completed live training in Linux and AWS at Besant Technology, Rajajinagar, Bangalore.</p>
-
-        <h2>Key Skills</h2>
-        <p>
-            <strong>Linux:</strong> Configured and managed virtual machines, package management, automation using shell scripting, network server configuration, and more.
-        </p>
-        <p>
-            <strong>AWS:</strong> Created IAM roles, VPCs, launched EC2 instances, and worked with EBS and EFS.
-        </p>
 
         <h2>Projects</h2>
         <p>
@@ -92,6 +102,10 @@
 
         <!-- Add more sections (e.g., Work Samples, Contact, etc.) -->
 
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:Sumanthg8281@gmail.com">Sumanthg8281@gmail.com</a></p>
+        <p>Phone: 7892647479</p>
+        <p>Location: Bangalore, India</p>
     </div>
 </body>
 </html>
