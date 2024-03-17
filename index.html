@@ -2,15 +2,20 @@
 <html>
 <head>
     <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
+        /* CSS styles for body, header, nav, etc. */
         body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-attachment: fixed;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background-color: #333;
+            background-color: rgba(0, 0, 0, 0.5);
             color: #fff;
             text-align: center;
             padding: 10px 0;
@@ -19,7 +24,6 @@
         nav {
             text-align: center;
             padding: 10px 0;
-            background-color: #f4f4f4;
         }
 
         nav ul {
@@ -34,48 +38,32 @@
         }
 
         nav ul li a {
-            color: #333;
+            color: #fff;
             text-decoration: none;
             padding: 5px 10px;
-            border: 1px solid #333;
+            border: 1px solid #fff;
             border-radius: 5px;
         }
 
         nav ul li a:hover {
-            background-color: #333;
-            color: #fff;
+            background-color: #fff;
+            color: #333;
         }
 
         .section {
             padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
             margin: 20px;
-            background-color: #f4f4f4;
             border-radius: 5px;
         }
 
-        .projects {
-            columns: 2;
-            column-gap: 20px;
-        }
-
-        .projects li {
-            margin-bottom: 10px;
-        }
-
-        video {
-            width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-
         footer {
-            background-color: #333;
+            background-color: rgba(0, 0, 0, 0.5);
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            position: relative; /* Make the footer a positioned element */
+            clear: both; /* Clear floats */
         }
 
         button {
@@ -89,6 +77,22 @@
 
         button:hover {
             background-color: #555;
+        }
+
+        /* CSS styles for the projects section */
+        .projects {
+            columns: 2; /* Display projects in 2 columns */
+            column-gap: 20px; /* Add gap between columns */
+        }
+
+        .projects li {
+            margin-bottom: 10px; /* Add space between project items */
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
         }
     </style>
 </head>
